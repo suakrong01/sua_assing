@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity Meter | Smart Plant Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Gravity Meter</h1>
+            <p>Soil Moisture Status</p>
+        </header>
+
+        <main>
+            <div class="gravity-chamber">
+                <div class="measuring-lines">
+                    <span>100%</span>
+                    <span>75%</span>
+                    <span>50%</span>
+                    <span>25%</span>
+                    <span>0%</span>
+                </div>
+                <div id="gravity-icon" class="floating-icon">
+                    💧
+                </div>
+                <!-- Visual indicator of the "ground" -->
+                <div class="ground-level"></div>
+            </div>
+
+            <div class="controls">
+                <div class="status-display">
+                    <span id="moisture-text">100%</span> Moisture
+                </div>
+                <button id="water-btn" class="water-button">
+                    <span class="btn-icon">🚿</span> Restore Gravity
+                </button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
